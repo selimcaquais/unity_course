@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class script1 : MonoBehaviour
+public class AutoRotate : MonoBehaviour
 {
 
     public float speed;
@@ -14,6 +14,6 @@ public class script1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position += new Vector3(0,0, this.speed);
+        this.transform.Rotate(Vector3.up, this.speed);
     }
 }
